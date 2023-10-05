@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+   <meta charset='UTF-8'>
+   <meta http-equiv="x-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, intial-scale=1.0">
+   <style>
+    section{
+        background:black;
+    }
+    h1{
+        position: absolute;
+        top:25%;
+        transform:translateY(-25%);
+        width:100%;
+        text-align:center;
+        text-transform:uppercase;
+        color:white;
+        font-size:6em
+    }
+    h1 span{
+        display: inline-block;
+        animation: animate 1s ease-in-out;
+    }
+    body{
+            background-color: black;
+        }
+    @keyframes animate{
+        0%{
+            opacity:0%;
+            transform:rotateY(90deg);
+            filter:blur(10px);
+        }
+        100%{
+            opacity:1;
+            transform:rotateY(0deg);
+            filter:blur(0px);
+        }
+    }
+    h1 span:nth-child(1){
+        animation-delay: 0.8s;
+    }
+    h1 span:nth-child(2){
+        animation-delay: 1.6s;
+    }
+    h1 span:nth-child(3){
+        animation-delay: 2.4s;
+    }
+    h1 span:nth-child(4){
+        animation-delay: 3.2s;
+    }
+    h1 span:nth-child(5){
+        animation-delay: 4s;
+    }
+    h1 span:nth-child(6){
+        animation-delay: 4.8s;
+    }
+   </style>
+</head>
+<body>
+    <section>
+        <h1>
+            <span>C</span>
+            <span>O</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </h1>
+    </section>
+   
+</body>
+</html>
